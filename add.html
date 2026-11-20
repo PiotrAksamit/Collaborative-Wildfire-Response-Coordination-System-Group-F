@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Report an Incident</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/add.js" defer></script>
+</head>
+
+<body>
+
+    <div class="add-header">
+        <a href="index.html" class="cancel-button">Cancel</a>
+        <h1>Report an Incident</h1>
+    </div>
+
+    <div class="main">
+
+        <h2>Choose Incident Location</h2>
+
+        <div class="page-layout">
+
+            <div class="map-section">
+                <div id="map" class="map">
+                    <img src="assets/map.jpg" alt="map">
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <h2>Incident Information</h2>
+                <form id="incidentForm">
+                    <div class="form-group">
+                        <label for="incidentName">Incident Name</label>
+                        <input type="text" id="incidentName" name="incidentName" required></input>
+                        <label for="incidentDescription">Incident Description</label>
+                        <textarea id="incidentDescription" name="incidentDescription" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="incidentCategory">Incident Category</label>
+                        <select id="incidentCategory" name="incidentCategory" required>
+                            <option value="" disabled selected>Select a catgegory</option>
+                            <option value="fire">Fire</option>
+                            <option value="injury">Injury</option>
+                        </select>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
